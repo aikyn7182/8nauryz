@@ -188,10 +188,10 @@
                     <span>2GIS / Картадан қарау</span>
                 </a>
 
-                <button onclick="acceptInvitation()" class="w-full bg-gradient-to-r from-deepRose to-roseGold text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:opacity-95 transform active:scale-95 transition duration-200 text-sm flex items-center justify-center space-x-2">
-                    <i class="fas fa-heart"></i>
+                <a href="https://wa.me/77082461074?text=%D0%A1%D3%A1%D0%BB%D0%B5%D0%BC%21%20%D0%A8%D0%B0%D1%92%D1%8B%D1%80%D1%83%D1%8B%D2%A3%D0%B4%D1%8B%20%D2%9B%D1%83%D0%B0%D0%BD%D0%B0%20%D2%9B%D0%B0%D0%B1%D1%8B%D0%BB%D0%B4%D0%B0%D0%B9%D0%BC%D1%8B%D0%BD%21%20%F0%9F%8C%B9%E2%9C%A8" target="_blank" class="w-full bg-gradient-to-r from-deepRose to-roseGold text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:opacity-95 transform active:scale-95 transition duration-200 text-sm flex items-center justify-center space-x-2">
+                    <i class="fab fa-whatsapp text-lg"></i>
                     <span>"Әрине, келемін!" ❤️</span>
-                </button>
+                </a>
             </div>
 
         </div>
@@ -202,20 +202,6 @@
         </p>
 
     </main>
-
-    <!-- Modal Dialog for Response -->
-    <div id="responseModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4 hidden">
-        <div class="glass-card bg-white p-6 rounded-3xl max-w-sm w-full text-center space-y-4">
-            <div class="text-4xl">🥰💖</div>
-            <h3 class="text-2xl font-bold text-deepRose font-serif">Алақай!</h3>
-            <p class="text-gray-600 text-sm">
-                Сенің келетініңді білгем! Бұл күн екеуміз үшін де ең әдемі естелік болады. 🌹
-            </p>
-            <button onclick="closeModal()" class="w-full bg-deepRose text-white font-semibold py-2 rounded-xl">
-                Күтемін! ✨
-            </button>
-        </div>
-    </div>
 
     <script>
         // Rose Petals Falling Animation
@@ -326,15 +312,6 @@
                 icon.className = 'fas fa-pause text-xl text-deepRose';
             }
             isPlaying = !isPlaying;
-        }
-
-        // Interaction Handlers
-        function acceptInvitation() {
-            document.getElementById('responseModal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('responseModal').classList.add('hidden');
         }
 
         window.onload = function() {
